@@ -13,18 +13,20 @@ for(let i = 0; i < verifiedMail.length; i++) {
     // stampa un messaggio appropriato sull’esito del controllo.
     if(thisMail === mailCheck) {
         mailFound = true;
-        if(mailFound = true) {
-            success.innerHTML = 'SUCCESS MAIL CHECK'
-            diceResult.classList.remove("hidden")
-        }
-    } else {
-        // controllo fallito
-        success.innerHTML = 'MAIL NON CONFERMATA, NON PUOI GIOCARE (prova con test@test.test)'
-        diceResult.classList.add("hidden");
+        // if(mailFound = true) {
+        //     success.innerHTML = 'SUCCESS MAIL CHECK'
+        //     diceResult.classList.remove('hidden')
+        // }
     }
 }
+if(mailFound === true) {
+    success.innerHTML = 'SUCCESS MAIL CHECK'
+    diceResult.classList.remove('hidden')
+} else {
+    success.innerHTML = 'MAIL NON CONFERMATA, PROVA CON mail@test.com'
+    diceResult.classList.add('hidden')
+}
 // GIOCO DEI DADI
-
 // estrazione numeri
 let randomPcNumber = Math.floor(Math.random() * 6) + 1;
 let randomUserNumber = Math.floor(Math.random() * 6) + 1;
