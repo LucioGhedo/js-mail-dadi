@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#dice-result {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+#numeri {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
