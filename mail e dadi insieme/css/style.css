@@ -8,6 +8,11 @@
     padding: 20px;
     font-size: 50px;
 }
+#success-mail {
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+}
 #numeri {
     text-align: center;
     padding: 10px;
